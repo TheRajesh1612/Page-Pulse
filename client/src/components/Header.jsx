@@ -61,7 +61,7 @@ export const Header = ({ history, onSelectHistory }) => {
           )}
         </div>
 
-        <a href="https://github.com" target="_blank" rel="noreferrer" className={`${styles.link} ${styles.hideMobile}`}>
+        <a href="https://github.com/TheRajesh1612/Page-Pulse" target="_blank" rel="noreferrer" className={`${styles.link} ${styles.hideMobile}`}>
           <Code size={18} />
           GitHub
         </a>

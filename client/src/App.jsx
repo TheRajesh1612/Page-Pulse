@@ -9,7 +9,9 @@ import { EmptyState } from './components/EmptyState.jsx';
 import styles from './App.module.css';
 import './index.css';
 
-const API_URL = 'http://localhost:3000/api/v1/audit';
+const API_URL = import.meta.env.PROD 
+  ? 'https://page-pulse-p0nm.onrender.com/api/v1/audit' 
+  : 'http://localhost:3000/api/v1/audit';
 
 function App() {
   const [data, setData] = useState(null);
