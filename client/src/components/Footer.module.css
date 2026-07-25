@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.copyright {
+  font-weight: 500;
+}
+
+.techStack {
+  display: flex;
+  gap: 1.5rem;
+}
