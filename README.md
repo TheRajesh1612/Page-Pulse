@@ -2,7 +2,7 @@
 
 A production-grade URL Audit Service.
 
-**Live Frontend Demo**: [https://page-pulse-kohl-seven.vercel.app](https://page-pulse-kohl-seven.vercel.app/)  
+**Live Frontend Demo**: [https://page-pulseaudit.vercel.app](https://page-pulseaudit.vercel.app/)  
 **Live Backend API**: [https://page-pulse-p0nm.onrender.com](https://page-pulse-p0nm.onrender.com)
 
 ## Features
@@ -56,13 +56,26 @@ A production-grade URL Audit Service.
    npm run dev
    ```
 
-## Live Deployment (Render / Railway)
-To deploy this service live (and get a public link for your hackathon submission):
+## Live Deployment
+
+The project is deployed using two separate platforms:
+
+### Client (Frontend) - Vercel
 1. Push this repository to GitHub.
-2. Go to [Render.com](https://render.com/) or [Railway.app](https://railway.app/).
+2. Go to [Vercel](https://vercel.com/) and create a new project.
+3. Import the GitHub repository.
+4. Set the Root Directory to `client`.
+5. Framework preset should be automatically detected as Vite.
+6. Deploy to get your live URL!
+
+### Server (Backend) - Render
+1. Push this repository to GitHub.
+2. Go to [Render.com](https://render.com/).
 3. Create a new "Web Service" and connect your GitHub repository.
-4. Set the Build Command to `npm install` and the Start Command to `npm start`.
-5. The platform will automatically deploy your code and provide a live URL!
+4. Set the Root Directory to `server`.
+5. Set the Build Command to `npm install` and the Start Command to `npm run start` or `node index.js`.
+6. Add necessary environment variables (e.g. `PORT`).
+7. Deploy to get your live API URL!
 
 ## API Documentation
 
